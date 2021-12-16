@@ -114,17 +114,12 @@ function CountryDropdown() {
           )}
         </div>
       ) : (
-        ""
-      )}
-      {!showDropdown ? (
         <input
           className="input"
           onChange={onChange}
           onKeyDown={onKeyDown}
           placeholder="Search"
         />
-      ) : (
-        ""
       )}
       {countries.length ? (
         <div className="autocomplete">
